@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cek Pajak</string>
+    <!-- Memasukkan Admob ID, Sebagai contoh Anda bisa gunakan ID berikut -->
+    <string name="banner_ad_unit_id">ca-app-pub-5518933839095943/8191847118</string>
+</resources>

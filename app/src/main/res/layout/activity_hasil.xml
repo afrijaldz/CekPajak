@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hasil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="ijul.cekpajak.HasilActivity">
+
+    <TextView
+        android:id="@+id/plat"
+        android:layout_centerHorizontal="true"
+        android:text="AD 5454 VI"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/datakendaraan"
+        android:textStyle="bold"
+        android:layout_below="@id/plat"
+        android:text="DATA KENDARAAN :"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tprovinsi"
+        android:textStyle="bold"
+        android:layout_below="@id/datakendaraan"
+        android:text="Provinsi "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tjenis"
+        android:textStyle="bold"
+        android:layout_below="@id/tprovinsi"
+        android:text="Jenis Kendaraan "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tmerk"
+        android:textStyle="bold"
+        android:layout_below="@id/tjenis"
+        android:text="Merk Kendaraan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/ttype"
+        android:textStyle="bold"
+        android:layout_below="@id/tmerk"
+        android:text="Type Kendaraan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/ttahun"
+        android:textStyle="bold"
+        android:layout_below="@id/ttype"
+        android:text="Tahun Pembuatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/twarna"
+        android:textStyle="bold"
+        android:layout_below="@id/ttahun"
+        android:text="Warna Kendaraan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/twilayah"
+        android:textStyle="bold"
+        android:layout_below="@id/twarna"
+        android:text="Wilayah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tpkb"
+        android:textStyle="bold"
+        android:layout_below="@id/twilayah"
+        android:text="PAJAK KENDARAAN :"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tjumlah"
+        android:textStyle="bold"
+        android:layout_below="@id/tpkb"
+        android:text="Jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tjatuh"
+        android:textStyle="bold"
+        android:layout_below="@id/tjumlah"
+        android:text="Jatuh Tempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tbiaya"
+        android:textStyle="bold"
+        android:layout_below="@id/tjatuh"
+        android:text="BIAYA :"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tbaliknama"
+        android:textStyle="bold"
+        android:layout_below="@id/tbiaya"
+        android:text="Balik Nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tjasaraharja"
+        android:textStyle="bold"
+        android:layout_below="@id/tbaliknama"
+        android:text="Jasa Raharja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

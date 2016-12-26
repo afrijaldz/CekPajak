@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ijul.cekpajak.MainActivity">
+
+    <LinearLayout
+
+        android:id="@+id/ln"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nomerplat"
+            android:hint="Nomor Plat"
+            android:maxLength="4"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:hint="Kode Plat"
+                android:inputType="text"
+                android:maxLength="2"
+                android:id="@+id/kodeplat"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/seriplat"
+                android:hint="Seri Plat"
+                android:inputType="text"
+                android:maxLength="3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:textColor="@android:color/background_light"
+            android:background="#ffab40"
+            android:id="@+id/btn"
+            android:layout_marginTop="5dp"
+            android:text="cek pajak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/plat"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/datakendaraan"
+                android:textStyle="bold"
+                android:layout_below="@id/plat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tprovinsi"
+                android:textStyle="bold"
+                android:layout_below="@id/datakendaraan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tjenis"
+                android:textStyle="bold"
+                android:layout_below="@id/tprovinsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tmerk"
+                android:textStyle="bold"
+                android:layout_below="@id/tjenis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/ttype"
+                android:textStyle="bold"
+                android:layout_below="@id/tmerk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/ttahun"
+                android:textStyle="bold"
+                android:layout_below="@id/ttype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/twarna"
+                android:textStyle="bold"
+                android:layout_below="@id/ttahun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/twilayah"
+                android:textStyle="bold"
+                android:layout_below="@id/twarna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tpkb"
+                android:textStyle="bold"
+                android:layout_below="@id/twilayah"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tjumlah"
+                android:textStyle="bold"
+                android:layout_below="@id/tpkb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tjatuh"
+                android:textStyle="bold"
+                android:layout_below="@id/tjumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tbiaya"
+                android:textStyle="bold"
+                android:layout_below="@id/tjatuh"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tbaliknama"
+                android:textStyle="bold"
+                android:layout_below="@id/tbiaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tjasaraharja"
+                android:textStyle="bold"
+                android:layout_below="@id/tbaliknama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--KANAN-->
+            <TextView
+                android:id="@+id/zplat"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/kdatakendaraan"
+                android:textStyle="bold"
+                android:layout_below="@id/zplat"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/provinsi"
+                android:layout_below="@id/kdatakendaraan"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/jenis"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/provinsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/merk"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/jenis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/type"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/merk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tahun"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/warna"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tahun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/wilayah"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/warna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pkb"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/wilayah"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/jumlah"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/pkb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/jatuh"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/jumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/biaya"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/jatuh"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/baliknama"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/biaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/jasaraharja"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/baliknama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+</RelativeLayout>
